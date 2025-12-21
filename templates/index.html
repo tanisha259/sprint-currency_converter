@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Sprint Global Pay</title>
+
+    <!-- Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Google Font -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+
+    <style>
+        body {
+            font-family: 'Poppins', sans-serif;
+            scroll-behavior: smooth;
+        }
+        section {
+            min-height: 100vh;
+            padding: 80px 20px;
+        }
+        .hero {
+            background: linear-gradient(135deg, #0f2027, #203a43, #2c5364);
+            color: white;
+        }
+        .hero img {
+            width: 90px;
+        }
+        .why {
+            background: #f8f9fa;
+        }
+        .converter {
+            background: linear-gradient(135deg, #4f46e5, #0d6efd);
+            color: white;
+        }
+        .card {
+            border-radius: 18px;
+        }
+    </style>
+</head>
+
+<body>
+
+<!-- 🔹 NAVBAR -->
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+    <div class="container">
+        <a class="navbar-brand fw-bold" href="#home">Sprint Global Pay</a>
+        <div>
+            <a class="nav-link d-inline text-white" href="#home">Home</a>
+            <a class="nav-link d-inline text-white" href="#why">Why Us</a>
+            <a class="nav-link d-inline text-white" href="#convert">Convert</a>
+        </div>
+    </div>
+</nav>
+
+<!-- 🟦 PAGE 1: HERO -->
+<section class="hero text-center d-flex align-items-center" id="home">
+    <div class="container">
+        <h1 class="display-4 fw-bold">Sprint Global Pay</h1>
+        <p class="lead mt-3">
+            Seamless, secure and instant currency conversion across the world.
+        </p>
+
+        <div class="row mt-5 justify-content-center">
+            <div class="col-4 col-md-2">
+                <img src="https://flagcdn.com/w320/us.png"><p>USA</p>
+            </div>
+            <div class="col-4 col-md-2">
+                <img src="https://flagcdn.com/w320/in.png"><p>India</p>
+            </div>
+            <div class="col-4 col-md-2">
+                <img src="https://flagcdn.com/w320/gb.png"><p>UK</p>
+            </div>
+            <div class="col-4 col-md-2">
+                <img src="https://flagcdn.com/w320/eu.png"><p>Europe</p>
+            </div>
+            <div class="col-4 col-md-2">
+                <img src="https://flagcdn.com/w320/jp.png"><p>Japan</p>
+            </div>
+            <div class="col-4 col-md-2">
+                <img src="https://flagcdn.com/w320/sg.png"><p>Singapore</p>
+            </div>
+        </div>
+
+        <a href="#convert" class="btn btn-light btn-lg mt-4">Start Conversion</a>
+    </div>
+</section>
+
+<!-- 🟩 PAGE 2: WHY -->
+<section class="why d-flex align-items-center" id="why">
+    <div class="container">
+        <h2 class="text-center fw-bold mb-5">Why Sprint Global Pay?</h2>
+
+        <div class="row g-4">
+            <div class="col-md-4">
+                <div class="card shadow h-100">
+                    <img src="https://images.unsplash.com/photo-1526304640581-d334cdbbf45e" class="card-img-top">
+                    <div class="card-body">
+                        <h5>Global Travel</h5>
+                        <p>Instant conversion helps travelers understand spending worldwide.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-4">
+                <div class="card shadow h-100">
+                    <img src="https://images.unsplash.com/photo-1567427017947-545c5f8d16ad" class="card-img-top">
+                    <div class="card-body">
+                        <h5>International Business</h5>
+                        <p>Used by businesses for cross-border trade and payments.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-4">
+                <div class="card shadow h-100">
+                    <img src="https://images.unsplash.com/photo-1559526324-593bc073d938" class="card-img-top">
+                    <div class="card-body">
+                        <h5>Secure & Reliable</h5>
+                        <p>FastAPI backend ensures speed, accuracy and reliability.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- 🟧 PAGE 3: CONVERTER -->
+<section class="converter d-flex align-items-center" id="convert">
+    <div class="container">
+        <h2 class="text-center fw-bold mb-4">Currency Converter</h2>
+
+        <div class="row justify-content-center">
+            <div class="col-md-6">
+                <div class="card shadow-lg p-4 text-dark">
+
+                    <label class="fw-semibold">From Currency</label>
+                    <select id="fromCurrency" class="form-select mb-3">
+                        <option value="USD">USD – US Dollar 🇺🇸</option>
+                        <option value="INR">INR – Indian Rupee 🇮🇳</option>
+                        <option value="EUR">EUR – Euro 🇪🇺</option>
+                        <option value="GBP">GBP – Pound Sterling 🇬🇧</option>
+                        <option value="SGD">SGD – Singapore Dollar 🇸🇬</option>
+                        <option value="JPY">JPY – Japanese Yen 🇯🇵</option>
+                    </select>
+
+                    <label class="fw-semibold">To Currency</label>
+                    <select id="toCurrency" class="form-select mb-3">
+                        <option value="USD">USD – US Dollar 🇺🇸</option>
+                        <option value="INR">INR – Indian Rupee 🇮🇳</option>
+                        <option value="EUR">EUR – Euro 🇪🇺</option>
+                        <option value="GBP">GBP – Pound Sterling 🇬🇧</option>
+                        <option value="SGD">SGD – Singapore Dollar 🇸🇬</option>
+                        <option value="JPY">JPY – Japanese Yen 🇯🇵</option>
+                    </select>
+
+                    <label class="fw-semibold">Amount</label>
+                    <input type="number" id="amount" class="form-control mb-3">
+
+                    <button class="btn btn-primary w-100 py-2" onclick="convertCurrency()">
+                        Convert
+                    </button>
+
+                    <div class="alert alert-success text-center mt-4 d-none" id="resultBox">
+                        <strong id="resultText"></strong>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- JS -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+
+<script>
+async function convertCurrency() {
+    const from = document.getElementById("fromCurrency").value;
+    const to = document.getElementById("toCurrency").value;
+    const amount = document.getElementById("amount").value;
+
+    if (!amount || amount <= 0) {
+        alert("Enter valid amount");
+        return;
+    }
+
+    const res = await fetch(`/convert?fromCurrency=${from}&toCurrency=${to}&amount=${amount}`);
+    const data = await res.json();
+
+    document.getElementById("resultBox").classList.remove("d-none");
+    document.getElementById("resultText").innerText =
+        `${amount} ${from} = ${data.convertedAmount} ${to}`;
+}
+</script>
+
+</body>
+</html>
