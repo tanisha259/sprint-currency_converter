@@ -1,3 +1,5 @@
+# CodeRabbit test
+
 from fastapi import FastAPI, HTTPException, Request
 from fastapi.responses import HTMLResponse
 from fastapi.templating import Jinja2Templates
